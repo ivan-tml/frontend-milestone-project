@@ -1,6 +1,23 @@
+/* ------------------------------------------------ Special paddings/margins/text */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bookTickets {
+    text-decoration: none;
+}
 
 
 /* ------------------------------------------------ Colors */
+
+.gold-color-font {
+    color: #ead187;
+}
+
+.red-color-background {
+    background-color: #901c1f;
+}
 
 
 /* ------------------------------------------------ Heading */
@@ -8,6 +25,7 @@
 .logo {
     text-align: center;
     margin: 0 auto;
+    margin-top: 2em;
 }
 
 .nav-item {
@@ -15,7 +33,6 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.1em;
-    color: #ead187;
     padding: 10px 0;
 }
 
@@ -27,8 +44,42 @@ li a:hover {
     color: #e8c25c;
 }
 
-img {
-    max-width: 100%;
+.mainImage img {
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+}
+
+.bookTickets {
+    margin-top: 2em;
+    text-align: center;
+    font-family: 'EB Garamond', sans-serif;
+}
+
+.bookTickets:hover {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------ Section */
+
+.albumInfo {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.albumInfo p {
+    margin-top: 1em;
+}
+
+.tracklist-button {
+    color: #901c1f;
+    border: 2px solid #ead187;
+    border-radius: 0;
+}
+
+.tracklist-button:hover {
+    background-color: #901c1f;
+    color: white;
 }
 
 /* ------------------------------------------------ Media */

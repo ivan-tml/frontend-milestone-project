@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700|EB+Garamond:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css" type="text/css" />
     <title>Fleetwood Mac</title>
 </head>
 
@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 justify-content-center logo">
-                    <img src="/assets/images/FMlogo.jpg"></img>
+                    <a href="index.html"><img src="assets/images/FMlogo.jpg"></img></a>
                 </div>
             </div>
         </div>
@@ -26,32 +26,134 @@
             </button>
             <div id="navbarMenu" class="collapse navbar-collapse nav-list">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item nav-item-color"><a href="index.html">Home</a></li>
-                    <li class="nav-item nav-item-color"><a href="tour.html">Tour</a></li>
-                    <li class="nav-item nav-item-color"><a href="theband.html">The Band</a></li>
-                    <li class="nav-item nav-item-color"><a href="albums.html">Albums</a></li>
-                    <li class="nav-item nav-item-color">Social</li>
+                    <li class="nav-item gold-color-font"><a href="index.html">Home</a></li>
+                    <li class="nav-item gold-color-font"><a href="tour.html">Tour</a></li>
+                    <li class="nav-item gold-color-font"><a href="theband.html">The Band</a></li>
+                    <li class="nav-item gold-color-font"><a href="albums.html">Albums</a></li>
+                    <li class="nav-item gold-color-font">Social</li>
                 </ul>
             </div>
         </nav>
     </header>
     <section>
-        <div class="upper-section container">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12 wrapper">
-                    <img src="/assets/images/FMMain.jpg"></img>
+                <div class="col-md-12 mainImage">
+                    <a href="tour.html"><img src="assets/images/FMMain.jpg"></img></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 bookTickets">
+                    <h3 class="uppercase gold-color-font">Fleetwood Mac announce European tour</h3>
+                    <a href="tour.html">
+                        <h5 class="gold-color-font bookTickets">Book your tickets now!</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid red-color-background">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 offset-md-2 gold-color-font albumInfo">
+                    <p>Over the years, there have been a surplus of Fleetwood Mac compilations but prior to 2018's 50 Years: Don't Stop, very few have attempted to tell the band's story from beginning to end.</p> 
+                    <p>This new compilation touches on every era in
+                        the band’s rich history and offers a deep dive into Fleetwood Mac’s expansive catalog by bringing together essential tracks released between 1968 and 2013. 50 Years: Don't Stop also highlights the talented musicians who have recorded
+                        under the Fleetwood Mac banner over the years, including Peter Green, Mick Fleetwood, Jeremey Spencer, John McVie, Danny Kirwan, Christine McVie, Bob Welch, Bob Weston, Lindsey Buckingham, Stevie Nicks, Billy Burnette, Rick Vito,
+                        Dave Mason, and Bekka Bramlett.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light tracklist-button" data-toggle="modal" data-target="#ModalLong">
+  VIEW TRACKLISTING
+</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="ModalLong" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLongTitle"><span class="uppercase">Tracklisting</span></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>Disk 1</h5>
+                                    <ol>
+                                        <li>Shake Your MoneyMaker</li>
+                                        <li>Black Magic Woman</li>
+                                        <li>Need Your Love So Bad</li>
+                                        <li>Albatros</li>
+                                        <li>Man Of The World</li>
+                                        <li>Oh Well - Pt.1 (Mono) [Remastered]</li>
+                                        <li>Rattlesnake Shake [Remastered]</li>
+                                        <li>The Green Manalishi (With The Two Prong Crown) [Remastered]</li>
+                                        <li>Tell Me All The Things You Do [Remastered]</li>
+                                        <li>Station Man (Single Version) [Remastered]</li>
+                                        <li>Sands Of Time (Single Version) [Remastered]</li>
+                                        <li>Spare Me A Little Of Your Love [Remastered]</li>
+                                        <li>Sentimental Lady (Single Version) [Remastered]</li>
+                                        <li>Did You Ever Love Me [Remastered]</li>
+                                        <li>Emerald Eyes [Remastered]</li>
+                                        <li>Hypnotized [Remastered]</li>
+                                        <li>Heroes Are Hard To Find (Single Version) [Remastered]</li>
+                                    </ol>
+                                    <h5>Disk 2</h5>
+                                    <ol>
+                                        <li>Monday Morning (Remastered)</li>
+                                        <li>Over My Head (Single Version) [Remastered]</li>
+                                        <li>Rhiannon (Will You Ever Win) [Single Version] [Remastered]</li>
+                                        <li>Say You Love Me (Single Version) [Remastered]</li>
+                                        <li>Landslide (Remastered)</li>
+                                        <li>Go Your Own Way (Remastered)</li>
+                                        <li>Dreams (Remastered)</li>
+                                        <li>Second Hand News (Remastered)</li>
+                                        <li>Don’t Stop (Remastered)</li>
+                                        <li>The Chain (Remastered)</li>
+                                        <li>You Make Loving Fun (Remastered)</li>
+                                        <li>Tusk (Remastered)</li>
+                                        <li>Sara (Single Version) [Remastered]</li>
+                                        <li>Think About Me (Single Version) [Remastered]</li>
+                                        <li>Fireflies (Single version) [Remastered]</li>
+                                        <li>Never Going Back Again (Live 1980 Tusk Tour) [Remastered]</li>
+                                    </ol>
+                                    <h5>Disk 3</h5>
+                                    <ol>
+                                        <li>Hold Me (Remastered)</li>
+                                        <li>Gypsy (Remastered)</li>
+                                        <li>Love In Store (Remastered)</li>
+                                        <li>Oh Diane (Remastered)</li>
+                                        <li>Big Love (Remastered)</li>
+                                        <li>Seven Wonders (Remastered)</li>
+                                        <li>Little Lies (Remastered)</li>
+                                        <li>Everywhere (Remastered)</li>
+                                        <li>As Long As You Follow (Remastered)</li>
+                                        <li>Save Me (Single Version) [Remastered]</li>
+                                        <li>Love Shines (Remastered)</li>
+                                        <li>Paper Doll (Remastered)</li>
+                                        <li>Paper Doll (Remastered)</li>
+                                        <li>Silver Springs (Live from Warner Brothers Studio, Burbank, CA, 5/23/1997) [Edit] [Remastered]</li>
+                                        <li>Peacekeeper (Remastered)</li>
+                                        <li>Say You Will (Remastered)</li>
+                                        <li>Sad Angel (Remastered)</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
 
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="functionality.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-    
+
 </html>
