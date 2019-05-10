@@ -12,7 +12,7 @@
 /* ------------------------------------------------ Colors */
 
 .gold-color-font {
-    color: #ead187;
+    color: #e8c25c;
 }
 
 .red-color-background {
@@ -60,15 +60,37 @@ li a:hover {
     text-decoration: none;
 }
 
+.new-album {
+    text-align: center;
+    font-size: 3em;
+    display: none;
+    visibility: hidden;
+}
+
 /* ------------------------------------------------ Section */
 
 .albumInfo {
     margin-top: 3em;
     margin-bottom: 3em;
+    text-align: center;
 }
 
 .albumInfo p {
     margin-top: 1em;
+    color: #ead187;
+}
+
+.bookTickets {
+    margin-bottom: 3em;
+}
+
+.album-cover img {
+    
+}
+/* ------------------------------------------------ Modal */
+
+.modal-content {
+    background-color: #FFF4E3;
 }
 
 .tracklist-button {
@@ -82,9 +104,17 @@ li a:hover {
     color: white;
 }
 
+.trackList li {
+    color: #491111;
+}
+
 /* ------------------------------------------------ Media */
 
 @media (min-width: 767px) {
+    .viewport-container {
+        min-height: 1100px;
+        height: 100vh;
+    }
     .nav-item {
         padding: 30px;
         width: 150px;
@@ -95,5 +125,24 @@ li a:hover {
     }
     li a {
         color: #ead187;
+    }
+    .albumInfo {
+        text-align: left;
+        margin-top: 10em;
+        margin-bottom: 10em;
+    }
+   
+}
+
+@media (min-width: 767px) and (min-height: 1024px) {
+    .new-album {
+        display: block;
+        visibility: visible;
+}
+}
+
+@media (min-width: 1024px) and (min-height: 1300px) {
+    .mainImage img {
+        margin-top: 10em;
     }
 }
