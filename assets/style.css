@@ -8,6 +8,9 @@
     text-decoration: none;
 }
 
+.heading-font {
+    font-family: 'EB Garamond', sans-serif;
+}
 
 /* ------------------------------------------------ Colors */
 
@@ -18,14 +21,24 @@
 .red-color-background {
     background-color: #901c1f;
 }
-
-
 /* ------------------------------------------------ Heading */
 
 .logo {
     text-align: center;
     margin: 0 auto;
     margin-top: 2em;
+}
+
+.bg-light {
+    background-color: #fff;
+}
+
+.navbar-expand-md {
+    padding: 0;
+}
+
+.navbar-expand-md .navbar-collapse {
+    background-color: #fff;
 }
 
 .nav-item {
@@ -84,9 +97,72 @@ li a:hover {
     margin-bottom: 3em;
 }
 
-.album-cover img {
-    
+.album-cover {
+    text-align: center;
+    padding-left: 0;
 }
+
+.album-cover img {
+    max-height: 250px;
+    width: auto;
+    margin-top: 8em;
+    -webkit-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+}
+
+.buy-now {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.buy-now h5 {
+    position: relative;
+}
+
+.buy-now h5:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    right: 0;
+    height: 4em;
+    border-top: 1px solid black;
+    z-index: -1;
+    color: #e8c25c;
+}
+
+.buy-now h5:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 70%;
+    height: 4em;
+    border-top: 1px solid black;
+    z-index: -1;
+}
+
+.buy-now p {
+    margin-bottom: 0;
+}
+
+.buy-now .btn-light {
+    width: 100%;
+    color: #901c1f;
+    background-color: white;
+    border-radius: 0;
+}
+
+.buy-now .btn-light:hover {
+    background-color: #901c1f;
+    color: white;
+}
+
+.music-video {
+    margin-top: 3em;
+}
+
 /* ------------------------------------------------ Modal */
 
 .modal-content {
@@ -106,6 +182,43 @@ li a:hover {
 
 .trackList li {
     color: #491111;
+}
+
+.close-modal {
+    color: #901c1f;
+    border: 2px solid #ead187;
+    border-radius: 0;
+    background-color: #fff;
+}
+
+.close-modal:hover {
+    background-color: #901c1f;
+    color: white;
+    border-color: #fff;
+}
+
+/* ------------------------------------------------ Footer */
+
+footer {
+    text-align: center;
+    margin-top: 5em;
+    height: 100px;
+    background-color: #e8c25c;
+}
+
+.copyright-footer {
+    font-size: .8em;
+    margin-top: 1.5em;
+} 
+
+.social-footer {
+    font-size: 2em;
+    margin-top: .2em;
+    letter-spacing: .3em;
+}
+
+.social-footer a {
+    color: #FFF4E3;
 }
 
 /* ------------------------------------------------ Media */
@@ -131,7 +244,9 @@ li a:hover {
         margin-top: 10em;
         margin-bottom: 10em;
     }
-   
+    footer {
+        height: 65px;
+    }
 }
 
 @media (min-width: 767px) and (min-height: 1024px) {
