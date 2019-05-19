@@ -18,9 +18,14 @@
     color: #e8c25c;
 }
 
+.red-color-font {
+    color: #901c1f;
+}
+
 .red-color-background {
     background-color: #901c1f;
 }
+
 /* ------------------------------------------------ Heading */
 
 .logo {
@@ -197,6 +202,41 @@ li a:hover {
     border-color: #fff;
 }
 
+/* ------------------------------------------------ Tour */
+
+.tour-dates {
+    text-align: center;
+    margin-top: 2em;
+    padding-top: 2em;
+}
+
+.event-listing {
+    margin-top: 2em;
+}
+
+
+.event-item {
+    margin-top: 1em;
+}
+
+.event-item span {
+    text-transform: uppercase;
+    color: #901c1f;
+}
+
+.event-item a {
+    color: #901c1f;
+    border: 2px solid #ead187;
+    border-radius: 0;
+    background-color: #fff;
+}
+
+.event-item a:hover {
+    background-color: #901c1f;
+    color: white;
+    border-color: #fff;
+}
+
 /* ------------------------------------------------ Footer */
 
 footer {
@@ -220,6 +260,7 @@ footer {
 .social-footer a {
     color: #FFF4E3;
 }
+
 
 /* ------------------------------------------------ Media */
 
