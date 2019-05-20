@@ -237,6 +237,21 @@ li a:hover {
     border-color: #fff;
 }
 
+/* ------------------------------------------------ The Band */
+
+.body-theband {
+    background-image: url("assets/images/FMRumors.jpg") fixed center;
+}
+
+.first-image {
+    margin-top: 2em;
+}
+
+.first-image img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ------------------------------------------------ Footer */
 
 footer {
