@@ -12,6 +12,10 @@
     font-family: 'EB Garamond', sans-serif;
 }
 
+.underline {
+    border-bottom: 3px solid #901c1f;
+}
+
 /* ------------------------------------------------ Colors */
 
 .gold-color-font {
@@ -26,12 +30,19 @@
     background-color: #901c1f;
 }
 
+.white-color-background {
+    background-color: #fff;
+}
+
 /* ------------------------------------------------ Heading */
 
 .logo {
     text-align: center;
     margin: 0 auto;
     margin-top: 2em;
+    background-color: #fff;
+    max-height: 250px;
+    width: auto;
 }
 
 .bg-light {
@@ -52,14 +63,29 @@
     font-weight: 500;
     font-size: 1.1em;
     padding: 10px 0;
+    border-bottom: 3px solid #fff;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid #901c1f;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
 }
 
 li a {
     color: #e5af27;
+    
 }
 
 li a:hover {
     color: #e8c25c;
+    text-decoration: none;
 }
 
 .mainImage img {
@@ -100,6 +126,10 @@ li a:hover {
 
 .bookTickets {
     margin-bottom: 3em;
+}
+
+.bookTickets a:hover {
+    color: #e8c25c;
 }
 
 .album-cover {
@@ -157,6 +187,7 @@ li a:hover {
     color: #901c1f;
     background-color: white;
     border-radius: 0;
+    border-color: #fff;
 }
 
 .buy-now .btn-light:hover {
@@ -240,7 +271,11 @@ li a:hover {
 /* ------------------------------------------------ The Band */
 
 .body-theband {
-    background-image: url("assets/images/FMRumors.jpg") fixed center;
+    background-image: url("https://www.jack969.com/wp-content/uploads/sites/13/2017/02/Fleetwood-Macs-Rumours-Turns-40-1024x576.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 400px;
 }
 
 .first-image {
@@ -250,6 +285,33 @@ li a:hover {
 .first-image img {
     max-width: 100%;
     height: auto;
+}
+
+.container-upper p, .container-lower p {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.container-lower {
+    margin-top: 20em;
+}
+
+/* ------------------------------------------------ Albums */
+
+
+.image-tiles img {
+    max-height: 250px;
+    width: auto;
+    padding-top: 2em;
+    text-align: center;
+    display: block;
+    margin: auto;
+    transition: .5s ease;
+}
+
+.image-tiles img:hover {
+    opacity: .5;
+    transition: .5s ease;
 }
 
 /* ------------------------------------------------ Footer */
@@ -303,13 +365,25 @@ footer {
     footer {
         height: 65px;
     }
+    .body-theband {
+        background-size: 700px;
+    }
+    .container-lower {
+        margin-top: 30em;
+    }
 }
 
 @media (min-width: 767px) and (min-height: 1024px) {
     .new-album {
         display: block;
         visibility: visible;
+    }
 }
+
+@media (min-width: 1024px) {
+    .body-theband {
+        background-size: 1000px;
+    }
 }
 
 @media (min-width: 1024px) and (min-height: 1300px) {
