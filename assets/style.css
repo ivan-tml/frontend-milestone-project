@@ -296,11 +296,52 @@ li a:hover {
     margin-top: 20em;
 }
 
+.form {
+    text-align: center;
+    background-color: #fff;
+    padding-top: 7em;
+    padding-bottom: 3em;
+    margin-bottom: -4em;
+}
+
+form .submit {
+    width: 100%;
+    color: #901c1f;
+    background-color: white;
+    border-radius: 0;
+    border-color: #fff;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+
+form .submit:hover {
+    background-color: #901c1f;
+    color: white;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+
+input[type="text"], input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #ead187;
+    border-radius: 0;
+    text-align: center;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder {
+    opacity: .9;
+}
+
+
 /* ------------------------------------------------ Albums */
 
 
 .image-tiles img {
-    max-height: 250px;
+    max-height: 300px;
     width: auto;
     padding-top: 2em;
     text-align: center;
@@ -309,9 +350,44 @@ li a:hover {
     transition: .5s ease;
 }
 
-.image-tiles img:hover {
-    opacity: .5;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
     transition: .5s ease;
+    background-color: #fff;
+}
+
+.album-item:hover .overlay {
+    opacity: .8;
+}
+
+.overlay .link {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay .link a {
+    text-decoration: none;
+    transition-duration: .1s;
+}
+
+.overlay .link a:hover {
+    color: #901c1f;
+    font-size: 22px;
+    transition-duration: .1s;
 }
 
 /* ------------------------------------------------ Footer */
