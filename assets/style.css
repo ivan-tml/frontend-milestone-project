@@ -46,7 +46,7 @@
 }
 
 .bg-light {
-    background-color: #fff;
+    background-color: #fff !important;
 }
 
 .navbar-expand-md {
@@ -78,6 +78,25 @@
     transition: 0.15s ease-in-out;
 }
 
+#btnPopover  {
+    margin-top: -5px;
+}
+
+#btnPopover:hover {
+    color: #e5af27;
+}
+
+.popover-custom {
+    color: #e8c25c;
+    font-size: 1.7em;
+    padding: 5px;
+    transition: .25s;
+}
+
+.popover-custom:hover {
+    color: #e5af27;
+}
+
 li a {
     color: #e5af27;
     
@@ -86,6 +105,14 @@ li a {
 li a:hover {
     color: #e8c25c;
     text-decoration: none;
+}
+
+.social-collapsed {
+    visibility: hidden;
+}
+
+.current-page {
+    color: #e8c25c;    
 }
 
 .mainImage img {
@@ -236,6 +263,7 @@ li a:hover {
 /* ------------------------------------------------ Tour */
 
 .tour-dates {
+    width: 100%;
     text-align: center;
     margin-top: 2em;
     padding-top: 2em;
@@ -296,7 +324,7 @@ li a:hover {
     margin-top: 20em;
 }
 
-.form {
+.form-container {
     text-align: center;
     background-color: #fff;
     padding-top: 7em;
@@ -304,8 +332,13 @@ li a:hover {
     margin-bottom: -4em;
 }
 
+form input {
+    max-width: 20em;
+}
+
 form .submit {
-    width: 100%;
+    width: 15em;
+    margin: 0 auto;
     color: #901c1f;
     background-color: white;
     border-radius: 0;
@@ -330,6 +363,8 @@ input[type="text"], input[type="email"] {
     border-bottom: 1px solid #ead187;
     border-radius: 0;
     text-align: center;
+    width: 40em;
+    margin: 0 auto;
 }
 
 input[type="text"]::placeholder, input[type="email"]::placeholder {
@@ -412,11 +447,35 @@ footer {
 
 .social-footer a {
     color: #FFF4E3;
+    transition: .25s;
 }
 
+.social-footer a .facebook:hover {
+    color: #3b5998;
+    transition: .25s;
+}
+
+.social-footer a .twitter:hover {
+    color: #00aced;
+    transition: .25s;
+}
+
+.social-footer a .spotify:hover {
+    color: #1DB954;
+    transition: .25s;
+}
+
+.social-footer a .apple:hover {
+    color: #7D7D7D;
+    transition: .25s;
+}
+
+.social-footer a .youtube:hover {
+    color: #ff0000;
+    transition: .25s;
+}
 
 /* ------------------------------------------------ Media */
-
 @media (min-width: 767px) {
     .viewport-container {
         min-height: 1100px;
@@ -432,6 +491,9 @@ footer {
     }
     li a {
         color: #ead187;
+    }
+    .social-collapsed {
+        visibility: visible;
     }
     .albumInfo {
         text-align: left;

@@ -28,10 +28,18 @@
             <div id="navbarMenu" class="collapse navbar-collapse nav-list">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item gold-color-font"><a href="index.html">Home</a></li>
-                    <li class="nav-item gold-color-font underline"><a href="tour.html">Tour</a></li>
+                    <li class="nav-item gold-color-font underline current-page"><a href="tour.html">Tour</a></li>
                     <li class="nav-item gold-color-font"><a href="theband.html">The Band</a></li>
                     <li class="nav-item gold-color-font"><a href="albums.html">Albums</a></li>
-                    <li class="nav-item gold-color-font">Social</li>
+                    <li class="nav-item gold-color-font social-collapsed">
+                            <button class="btn social-button gold-color-font uppercase" id="btnPopover" data-html="true" data-content="
+                                                  <a class='social-icons' href='https://www.facebook.com/FleetwoodMac' target='_blank'><i class='fab fa-facebook-square popover-custom'></i></a>
+                                                  <a class='social-icons' href='https://twitter.com/fleetwoodmac4' target='_blank'><i class='fab fa-twitter popover-custom'></i></a>
+                                                  <a class='social-icons' href='https://open.spotify.com/artist/08GQAI4eElDnROBrJRGE0X' target='_blank'><i class='fab fa-spotify popover-custom'></i></a>
+                                                  <a class='social-icons' href='https://itunes.apple.com/ca/artist/fleetwood-mac/158038' target='_blank'><i class='fab fa-apple popover-custom'></i></a>
+                                                  <a class='social-icons' href='https://www.youtube.com/channel/UCAb60rVrvVQVfSgrX1UWb0g' target='_blank'><i class='fab fa-youtube popover-custom'></i></a>" data-trigger="focus" data-placement="bottom" data-toggle="popover">
+                                Social
+                        </button></li>
                 </ul>
             </div>
         </nav>
@@ -366,11 +374,11 @@
                     &copy; Fleetwood Mac. All rights reserved.
                 </div>
                 <div class="col-12 col-sm-6 order-sm-1 social-footer">
-                    <a href="https://www.facebook.com/FleetwoodMac" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://twitter.com/fleetwoodmac4" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://open.spotify.com/artist/08GQAI4eElDnROBrJRGE0X" target="_blank"><i class="fab fa-spotify"></i></a>
-                    <a href="https://itunes.apple.com/ca/artist/fleetwood-mac/158038" target="_blank"><i class="fab fa-apple"></i></a>
-                    <a href="https://www.youtube.com/channel/UCAb60rVrvVQVfSgrX1UWb0g" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/FleetwoodMac" target="_blank"><i class="fab fa-facebook-square facebook"></i></a>
+                    <a href="https://twitter.com/fleetwoodmac4" target="_blank"><i class="fab fa-twitter twitter"></i></a>
+                    <a href="https://open.spotify.com/artist/08GQAI4eElDnROBrJRGE0X" target="_blank"><i class="fab fa-spotify spotify"></i></a>
+                    <a href="https://itunes.apple.com/ca/artist/fleetwood-mac/158038" target="_blank"><i class="fab fa-apple apple"></i></a>
+                    <a href="https://www.youtube.com/channel/UCAb60rVrvVQVfSgrX1UWb0g" target="_blank"><i class="fab fa-youtube youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -378,6 +386,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#btnPopover').popover();
+        });
+    </script>
 </body>
 
 </html>
