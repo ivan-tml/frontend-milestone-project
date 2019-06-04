@@ -324,6 +324,12 @@ li a:hover {
     margin-top: 20em;
 }
 
+#form-line {
+    margin-bottom: 2em;
+    width: 75%;
+    background-color: #901c1f;
+}
+
 .form-container {
     text-align: center;
     background-color: #fff;
