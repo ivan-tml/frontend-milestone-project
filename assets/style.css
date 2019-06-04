@@ -1,3 +1,8 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* ------------------------------------------------ Special paddings/margins/text */
 
 .uppercase {
@@ -222,6 +227,11 @@ li a:hover {
     color: white;
 }
 
+.spotify-player {
+    margin-top: 2em;
+    text-align: center;
+}
+
 .music-video {
     margin-top: 3em;
 }
@@ -278,9 +288,17 @@ li a:hover {
     margin-top: 1em;
 }
 
+.event-item row {
+    margin-right: 0;
+}
+
 .event-item span {
     text-transform: uppercase;
     color: #901c1f;
+}
+
+.button-column {
+    padding-left: 0;
 }
 
 .event-item a {
@@ -379,7 +397,6 @@ input[type="text"]::placeholder, input[type="email"]::placeholder {
 
 
 /* ------------------------------------------------ Albums */
-
 
 .image-tiles img {
     max-height: 300px;
