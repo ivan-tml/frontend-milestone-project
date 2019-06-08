@@ -83,7 +83,7 @@ body {
     transition: 0.15s ease-in-out;
 }
 
-#btnPopover  {
+#btnPopover {
     margin-top: -5px;
 }
 
@@ -104,7 +104,7 @@ body {
 
 li a {
     color: #e5af27;
-    
+
 }
 
 li a:hover {
@@ -117,7 +117,7 @@ li a:hover {
 }
 
 .current-page {
-    color: #e8c25c;    
+    color: #e8c25c;
 }
 
 .mainImage img {
@@ -173,9 +173,9 @@ li a:hover {
     max-height: 250px;
     width: auto;
     margin-top: 8em;
-    -webkit-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
 }
 
 .buy-now {
@@ -333,7 +333,8 @@ li a:hover {
     height: auto;
 }
 
-.container-upper p, .container-lower p {
+.container-upper p,
+.container-lower p {
     padding-top: 2em;
     padding-bottom: 2em;
 }
@@ -382,7 +383,8 @@ form .submit:hover {
     transition: 0.15s ease-in-out;
 }
 
-input[type="text"], input[type="email"] {
+input[type="text"],
+input[type="email"] {
     border: none;
     border-bottom: 1px solid #ead187;
     border-radius: 0;
@@ -391,7 +393,8 @@ input[type="text"], input[type="email"] {
     margin: 0 auto;
 }
 
-input[type="text"]::placeholder, input[type="email"]::placeholder {
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
     opacity: .9;
 }
 
@@ -460,7 +463,7 @@ footer {
 .copyright-footer {
     font-size: .8em;
     margin-top: 1.5em;
-} 
+}
 
 .social-footer {
     font-size: 2em;
@@ -499,6 +502,7 @@ footer {
 }
 
 /* ------------------------------------------------ Media */
+
 @media (min-width: 767px) {
     .viewport-container {
         min-height: 1100px;
